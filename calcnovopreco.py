@@ -13,5 +13,20 @@ else:
         novopreco = precoatual + (precoatual * 15 / 100)
 print("O novo preco e", novopreco)
 
+if novopreco <=80:
+    print("Barato")
+else:
+    if novopreco > 80 and novopreco <= 120:
+        print("Normal")
+    else:
+        if novopreco > 120 and novopreco <= 200:
+            print("Caro")
+        else:
+            print("Muito Caro")
+
+
+
+
+
 
 
