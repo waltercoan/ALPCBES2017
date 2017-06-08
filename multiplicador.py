@@ -10,6 +10,6 @@ soma=0
 while(cont < num1):
     cont = cont + 1
     print(num2,end=" + ")
-     soma= soma + num2
+    soma= soma + num2
 
 print("O resultado e", soma)
