@@ -1,3 +1,4 @@
+numeros = [0] * 100
 telefones =['555-1234',
             '555-4321',
             '555-1111',
@@ -17,7 +18,7 @@ listalimpa = []
 #listalimpa[0] = 'lalalla'
 listalimpa.append('lalalal')
 
-numeros = [0] * 100
+
 print('Tamanho - length', len(numeros))
 for i in range(len(numeros)):
     numeros[i] = -1
