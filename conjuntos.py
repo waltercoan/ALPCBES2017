@@ -22,9 +22,8 @@ for pos in range(10):
     if not achou:
         uniao[proxlivre] = y[pos]
         proxlivre += 1
+
+
 #b.	a diferença entre X e Y
 # (todos os elementos de X que não existam em Y)
-
-
-
 print(uniao)
