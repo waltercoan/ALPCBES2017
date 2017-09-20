@@ -23,7 +23,51 @@ for pos in range(10):
         uniao[proxlivre] = y[pos]
         proxlivre += 1
 
-
+print(uniao)
 #b.	a diferença entre X e Y
 # (todos os elementos de X que não existam em Y)
-print(uniao)
+
+diferenca = [0] * 10
+proxlivre = 0
+for posx in range(10):
+    print(x[posx])
+    achei = False
+    for posy in range(10):
+        print(y[posy], end=" ")
+        if x[posx] == y[posy]:
+            achei = True
+            break
+    print("\n")
+    if achei == False:
+        diferenca[proxlivre] = x[posx]
+        proxlivre += 1
+print("Diferença")
+print(diferenca)
+
+soma = [0] * 10
+
+for pos in range(10):
+    soma[pos] = x[pos] + y[pos]
+
+print("Soma")
+print(soma)
+
+produto = [0] * 10
+for pos in range(10):
+    produto[pos] = x[pos] * y[pos]
+
+print("Produto")
+print(produto)
+
+inter = [0] * 10
+proxlivre = 0
+for posx in range(10):
+    print("X:", x[posx])
+    for posy in range(10):
+        print(y[posy], end=" ")
+        if x[posx] == y[posy]:
+            inter[proxlivre] = x[posx]
+            proxlivre += 1
+            break
+print("Inter")
+print(inter)
