@@ -4,7 +4,7 @@ proc = int(input("Digite o numero procurado"))
 inicio = 0
 fim = len(lista)-1
 achei=False
-while(inicio < fim):
+while(inicio <= fim):
     meio = int((inicio+fim)/2)
     if proc == lista[meio]:
         print("Encontrei...")
