@@ -46,4 +46,25 @@ for lin in range(4):
     somaarm = 0
 print("O armazem ", oarmzemmenor, " possui a menor qtd com ", omenor)
 #d.	Qual o custo total de cada produto
+somaqtd = 0
+for col in range(3):
+    for lin in range(4):
+        somaqtd = somaqtd + dados[lin][col]
+    #aqui acabou
+    custodoprod = somaqtd * dados[4][col]
+    print("O custo total do produto ", col+1, " e de: ", custodoprod)
+    somaqtd = 0
 #e.	Qual o custo total de cada armazém
+totprodarm=0
+for lin in range(4):
+    for col in range(3):
+        totprodarm =  totprodarm + (dados[lin][col] * dados[4][col])
+        #aqui1
+    print("O armazem ", lin+1, " tem o val total de ", totprodarm)
+    totprodarm = 0
+#aqui3
+
+
+
+
+
